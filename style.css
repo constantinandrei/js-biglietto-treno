@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: lightgray;
+}
+
+h4 {
+    font-size: 1.8rem;
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+}
+
+.card {
+    margin: 4rem;
+    border: 1px solid lightgray;
+    box-shadow: 8px 16px 25px 5px rgb(69, 64, 64);
+    width: 500px;
+}
+
+.variable-name {
+    padding: 1rem;
+    text-align: right;
+}
+
+.variable-value {
+    padding: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
