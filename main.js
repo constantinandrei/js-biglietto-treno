@@ -12,23 +12,23 @@ let finalPrice;
 
 userAge = prompt("Inserire l'età del viaggiatore");
 
-if ((userAge < 0) || (isNaN(userAge)) || (userAge === "")){
+if ((parseInt(userAge) < 0) || (isNaN(parseInt(userAge)) || (userAge === ""))) {
     alert(notValidAgeMessage);
     userAge = dataNotInsert;
 }
 
 kmToBill = prompt("Inserire i km della tratta prevista");
 
-if ((kmToBill < 0) || (isNaN(kmToBill)) || (kmToBill === "")) {
+if ((parseInt(kmToBill) < 0) || (isNaN(parseInt(kmToBill))) || (kmToBill === "")) {
     alert(notValidKmMessage)
     kmToBill = dataNotInsert;
 }
 
-let totalPrice = kmPrice * kmToBill;
+let totalPrice = kmPrice * parseInt(kmToBill);
 
-if (userAge <= 18) {
+if (parseInt(userAge) <= 18) {
     finalPrice = totalPrice * discount20;
-} else if (userAge >= 65){
+} else if (parseInt(userAge) >= 65){
         finalPrice = totalPrice * discount40;
 } else {
     finalPrice = totalPrice;
